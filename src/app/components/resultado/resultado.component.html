@@ -1,0 +1,6 @@
+<div>
+  <p>Valor a vista: {{ valorAVista }}</p>
+  <p>Valor a prazo: {{ valorAPrazo }}</p>
+  <button (click)="copiar()">Copiar orçamento</button>
+  <textarea [hidden]="!copiado">{{ textoCopiado }}</textarea>
+</div>

@@ -1,0 +1,20 @@
+<form [formGroup]="form">
+  <label>Nome do cliente</label>
+  <input class="form-control" formControlName="nome" type="text">
+  
+  <label>Distância até a sede (deslocamento)</label>
+  <input class="form-control" formControlName="distancia" type="number">
+  
+  <label>Volume de calda inseticida prevista</label>
+  <input class="form-control" formControlName="volumeCalda" type="number">
+  
+  <label>Horas técnicas necessárias</label>
+  <input class="form-control" formControlName="horasTecnicas" type="number">
+  
+  <label>Número de porta iscas necessários</label>
+  <input class="form-control" formControlName="numeroPortaIscas" type="number">
+  
+  <label for="pragasAlvo">Pragas alvo:</label>
+  <input class="form-control" type="text" class="form-control" id="pragasAlvo" [formControlName]="'pragasAlvo'">
+
+</form>
